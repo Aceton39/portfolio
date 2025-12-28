@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aston Casiñas — Portfolio</title>
+    <meta name="description" content="Portfolio of Aston Casiñas — Projects, skills, and contact.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="logo" href="#">YN</a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">🌙</button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-inner container">
+          <div class="hero-text reveal" data-reveal-delay="100">
+            <h1>Hi, I’m <span class="accent">Aston Casiñas</span>.</h1>
+            <p class="subtitle">I build fast, accessible web experiences.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Contact Me</a>
+            </div>
+            <div class="socials">
+              <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer noopener" aria-label="GitHub">GitHub</a>
+              <a href="https://linkedin.com/in/yourhandle" target="_blank" rel="noreferrer noopener" aria-label="LinkedIn">LinkedIn</a>
+              <a href="mailto:casinasaston822@gmail.com" aria-label="Email">Email</a>
+            </div>
+          </div>
+          <div class="hero-photo reveal" data-reveal-delay="200">
+            <img src="assets/image.jpg" alt="Portrait of Aston Casiñas">
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container reveal">
+          <h2>About</h2>
+          <p>
+            I’m a web developer focused on crafting delightful user experiences with
+            clean, maintainable code. I specialize in JavaScript, modern CSS, and PHP,
+            and I care about performance, accessibility, and thoughtful design.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container reveal">
+          <h2>Skills</h2>
+          <ul class="skill-list">
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+            <li>MySQL</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li>
+            <li>SEO</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container reveal">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <article class="project-card reveal" data-reveal-delay="100">
+              <img src="assets/project-1.jpg" alt="Screenshot of Project One">
+              <div class="project-content">
+                <h3>Project One</h3>
+                <p>A brief description of what the project does and why it’s interesting.</p>
+                <div class="tags">
+                  <span>PHP</span><span>MySQL</span><span>Bootstrap</span>
+                </div>
+                <div class="links">
+                  <a href="#" class="btn small" target="_blank" rel="noreferrer noopener">Live</a>
+                  <a href="#" class="btn small" target="_blank" rel="noreferrer noopener">Code</a>
+                </div>
+              </div>
+      </section>
+
+      <section class="section" id="experience">
+        <div class="container reveal">
+          <h2>Experience</h2>
+          <div class="timeline">
+            <div class="item">
+              <div class="item-header">
+                <h3>Front-End Developer · Company</h3>
+                <span class="meta">2023 — Present</span>
+              </div>
+              <ul>
+                <li>Built and maintained component libraries serving multiple teams.</li>
+                <li>Improved Lighthouse performance scores by 35%.</li>
+              </ul>
+            </div>
+            <div class="item">
+              <div class="item-header">
+                <h3>Software Engineer · Company</h3>
+                <span class="meta">2021 — 2023</span>
+              </div>
+              <ul>
+                <li>Delivered feature work across the stack using PHP and JS.</li>
+                <li>Led migration to modern CSS improving DX and reliability.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container reveal">
+          <h2>Contact</h2>
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="website">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="hp" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button class="btn primary" type="submit">Send</button>
+            <p class="form-hint">Prefer email? <a href="mailto:casinasaston822@gmail.com">casinasaston822@gmail.com</a></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Aston Casiñas. All rights reserved.</p>
+        <a href="#hero" class="back-to-top">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
